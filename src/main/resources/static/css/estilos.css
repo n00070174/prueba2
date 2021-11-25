@@ -1,0 +1,12 @@
+/*Imagenes*/
+.gobierno{ border: 2px solid black; float: left; width: 140px; }
+.diresa{ border: 2px solid black; float: right; width: 140px; }
+
+/*Contenido*/
+.header{padding: 10px; margin: 40px; }
+.footer{margin: 40px; text-align: center; display: block ;left: 0; bottom: 0;}
+.rpaciente{text-align: center; margin: 20px;}
+.notice { width: 540px; height: 541px; margin: 20px; padding: 40px;}
+.vid {text-align: center; }
+h2{text-align: center; margin: 30px;}
+h5{text-align: center;}

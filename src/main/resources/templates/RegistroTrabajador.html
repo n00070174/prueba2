@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Trabajador</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/estilos.css"/>
+</head>
+<body>
+<header class="header">
+	<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"></a>
+                <img class="gobierno" src="/Imagenes/gobierno.jpg">
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Inicio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Citas</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Inicio Sesion</a></li>
+                    </ul>
+                </div>
+                <img class="diresa" src="/Imagenes/diresa.png">
+            </div>
+        </nav>
+</header>
+	<h1 class="rpaciente">Registrar Trabajador</h1>
+	<div class="container">
+		<form class="row g-3">
+			<div class="col-md-6">
+				<label for="inputName" class="form-label">Nombres</label>
+			    <input type="text" class="form-control" th:field="*{Nombres}" placeholder="Juan Manuel">
+			</div>
+			<div class="col-md-6">
+				<label for="inputLasName" class="form-label">Apellidos</label>
+			    <input type="text" class="form-control" th:field="*{Apellidos}" placeholder="Martinez Rodriguez">
+			</div>		  	
+		  	<div class="col-md-6">
+			    <label for="inputAddress" class="form-label">Dirección</label>
+			    <input type="text" class="form-control" th:field="*{Direccion}" placeholder="1234 Main St">
+		 	</div>
+		 	<div class="col-md-6">
+		 		<label for="start" class="form-label">Fecha Nacimiento</label>
+				<input type="date" class="form-control" th:field="*{Fecha_Nacimiento}" name="trip-start" value="2021-10-14"
+       			min="1900-01-01" max="2030-12-31">
+		 	</div>
+		  	<div class="col-md-4">
+			    <label for="inputDocument" class="form-label">Documento</label>
+			    <input type="text" class="form-control" th:field="*{Documento}"/>
+		  	</div>
+		  	<div class="col-md-4">
+			    <label for="inputState" class="form-label">Sexo</label>
+			    <select id="inputState" th:field="*{Sexo}" class="form-select">
+			      <option selected>Seleccione...</option>
+			      <option>Femenino</option>
+			      <option>Masculino</option>
+			    </select>
+		  	</div>
+		  	<div class="col-md-4">
+			    <label for="inputTelef" class="form-label">Telefono/Celular</label>
+			    <input type="text" class="form-control" th:field="*{Telefono_Celular}">
+		  	</div>
+		  	<div class="col-md-6">
+			    <label for="inputEmail4" class="form-label">Email</label>
+			    <input type="email" class="form-control" th:field="*{Email}">
+		  	</div>
+		  	<div class="col-md-6">
+			    <label for="inputPassword4" class="form-label">Username</label>
+			    <input type="text" class="form-control" th:field="*{username}">
+		  	</div>
+		  	<div class="col-md-6">
+			    <label for="inputPassword4" class="form-label">Contraseña</label>
+			    <input type="password" class="form-control" th:field="*{password}">
+		  	</div>
+		  	<div class="col-12">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        Acepto registro
+			      </label>
+			    </div>
+		  	</div>
+		  	<div class="col-12">
+		    	<button type="submit" class="btn btn-primary">Registar</button>
+		  	</div>
+		</form>
+	</div>
+
+
+<footer class="footer">
+    <p>Copyright &copy; 2021 DiresaCallao, todos los derechos reservados.</p>
+</footer>
+
+</html>	
+</body>
+</html>
